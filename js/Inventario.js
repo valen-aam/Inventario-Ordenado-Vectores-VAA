@@ -1,4 +1,3 @@
-
 class Inventario{
     constructor(){
         this.datos = [];
