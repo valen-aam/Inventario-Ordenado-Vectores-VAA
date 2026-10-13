@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario ordenado</title>
+</head>
+<body>
+
+    <h1>Inventario ordenado por codigo</h1>
+
+    <div>
+        <form id="formInventario">
+            <label for="codigo">Codigo:</label>
+            <input type="number" id="codigo" step="1">
+            <br><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <br><br>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="0" step="1">
+            <br><br>
+
+            <label for="costo">Costo:</label>
+            <input type="number" id="costo" min="0" step="any">
+            <br><br>
+
+            <button type="button" id="btnAgregar">Agregar</button>
+            <button type="button" id="btnBuscar">Buscar por codigo</button>
+            <button type="button" id="btnEliminar">Eliminar por codigo</button>
+            <button type="button" id="btnRecuperar">Recuperar listado</button>
+            <button type="button" id="btnPrimero">Extraer primero</button>
+            <button type="button" id="btnUltimo">Extraer ultimo</button>
+            <button type="button" id="btnListar">Listar</button>
+            <button type="button" id="btnInverso">Listar inverso</button>
+            <button type="button" id="btnLimpiar">Limpiar campos</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="detalles">
+        <p>Aqui se mostraran los resultados de las operaciones.</p>
+    </div>
+
+    <script src="js/Producto.js"></script>
+    <script src="js/Inventario.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
