@@ -1,4 +1,3 @@
-
 const inventario = new Inventario();
 
 const codigo = document.getElementById("codigo");
